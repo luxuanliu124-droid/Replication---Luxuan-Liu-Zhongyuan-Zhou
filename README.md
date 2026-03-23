@@ -10,7 +10,7 @@ Marketing Science, 42(4), 637–658.
 
 **Authors of the replication**:
 Luxuan Liu
-Zhongyuan Zhou
+& Zhongyuan Zhou
 
 School of Hotel and Tourism Management
 CUHK Business School
