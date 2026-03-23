@@ -1,0 +1,18 @@
+[36mDiscovery starting.[0m
+[36mDiscovery completed in 306 milliseconds.[0m
+[36mRun starting. Expected test count is: 9[0m
+[32mTimelineTest:[0m
+[32m- two-state-discrete-mdp-one-step-rl[0m
+[32m- four-state-discrete-mdp-three-step-rl[0m
+[32m- three-state-continuous-mdp-two-step-rl[0m
+[32m- two-state-continuous-mdp[0m
+[32m- two-state-continuous-mdp-sparse-action[0m
+[32m- two-state-discrete-sparse-mdp[0m
+[32m- two-state-discrete-mdp[0m
+[32m- filter-outliers[0m
+[32m- time-window-limit[0m
+[36mRun completed in 32 seconds, 481 milliseconds.[0m
+[36mTotal number of tests run: 9[0m
+[36mSuites: completed 2, aborted 0[0m
+[36mTests: succeeded 9, failed 0, canceled 0, ignored 0, pending 0[0m
+[32mAll tests passed.[0m

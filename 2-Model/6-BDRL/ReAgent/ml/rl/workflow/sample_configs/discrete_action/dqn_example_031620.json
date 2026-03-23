@@ -1,0 +1,101 @@
+{
+  "training_data_path": "data031620/cartpole_discrete_timeline.json",
+  "eval_data_path": "data031620/cartpole_discrete_timeline_eval.json",
+  "state_norm_data_path": "data031620/state_features_norm.json",
+  "model_output_path": "outputs031620/",
+  "use_gpu": false,
+  "use_all_avail_gpus": false,
+  "num_nodes": 1,
+  "init_method": "file:///tmp/dqn_example.lock",
+  "norm_params": {
+    "output_dir": "data031620/",
+    "cols_to_norm": [
+      "state_features"
+    ],
+    "num_samples": 1000
+  },
+  "actions": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49"
+  ],
+  "epochs": 20,
+  "rl": {
+    "gamma": 0.99,
+    "target_update_rate": 0.2,
+    "maxq_learning": true,
+    "epsilon": 0.2,
+    "temperature": 0.35,
+    "softmax_policy": 0
+  },
+  "rainbow": {
+    "double_q_learning": true,
+    "dueling_architecture": false
+  },
+  "training": {
+    "layers": [
+      -1,
+      32,
+      32,
+      -1
+    ],
+    "activations": [
+      "relu",
+      "relu",
+      "linear"
+    ],
+    "minibatch_size": 256,
+    "learning_rate": 0.001,
+    "optimizer": "ADAM",
+    "lr_decay": 0.999,
+    "warm_start_model_path": null,
+    "l2_decay": 0
+  }
+}

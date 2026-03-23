@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww16280\viewh12520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 pai -name a3gentnew\
+ -Dscript = \'93oops://dp_ds_vs_dev/resources/bcq.tar.gz\'94\
+ -DentryFile=\'93run_bcq_on_batchdata.py\'94 \
+ -Dcluster=\'93\{\\\'94worker\\\'94:\{\\\'94count\\\'94:1\}\}\'94\
+\
+ -Dtables=\'93odps://dp_ds_vs_dev/tables/train_data_a3gent_model_input_bcq_T1\'94 \
+ -Dbuckets=\'93oss://netspace/work/gongxiangdm/wangjia?role_arn=acs:ram::124493513577134:role/jiawen&host=cn-hangzhou.oss-internal.aliyun-inc.com\'94\
+ -DuserDefinedParameters=\'93\'97state_dim=375 \'97epochs_to_end=10 \'97max_globel_steps_to_end=20000 \'97threshold=30 \'97batch_size=2560 \'97oss_path_ckpt=oss://netspace/work/gongxiangdm/wangjia/BCQ/ckpt/T1/ \'97oss_path_save=oss://netspace/work/gongxiangdm/wangjia/BCQ/save/T1/ \'94\
+ -DmaxHungTimeBeforeGCInSeconds=0;\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 pai -name a3gentnew\
+ -Dscript = \'93oops://dp_ds_vs_dev/resources/bcq.tar.gz\'94\
+ -DentryFile=\'93run_bcq_predict_on_batchdata.py\'94 \
+ -Dcluster=\'93\{\\\'94worker\\\'94:\{\\\'94count\\\'94:1\}\}\'94\
+ -Doutputs=\'93odps://dp_ds_vs_dev/tables/train_data_a3gent_model_input_bcq_T1_pred\'94\
+\
+ -Dtables=\'93odps://dp_ds_vs_dev/tables/train_data_a3gent_model_input_bcq_T1\'94 \
+ -Dbuckets=\'93oss://netspace/work/gongxiangdm/wangjia?role_arn=acs:ram::124493513577134:role/jiawen&host=cn-hangzhou.oss-internal.aliyun-inc.com\'94\
+ -DuserDefinedParameters=\'93\'97state_dim=375 \'97epochs_to_end=10 \'97max_globel_steps_to_end=20000 \'97threshold=30 \'97batch_size=2560 \'97oss_path_ckpt=oss://netspace/work/gongxiangdm/wangjia/BCQ/ckpt/T1/ \'97oss_path_save=oss://netspace/work/gongxiangdm/wangjia/BCQ/save/T1/ \'94\
+ -DmaxHungTimeBeforeGCInSeconds=0;\
+}
